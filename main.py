@@ -42,7 +42,7 @@ def main():
         im_bgr = r.plot()
         im_rgb = im_bgr[..., ::-1].copy()
         img_t = torch.from_numpy(im_rgb).permute(2, 0, 1).float().div(255.0)
-        save_image(img_t, f"outputs/result_{i:04d}.jpg")  # result_0000.jpg ...
+        save_image(img_t, f"result_{i:04d}.jpg")  # result_0000.jpg ...
 
 if __name__ == "__main__":
     main()

@@ -2,10 +2,13 @@
 
 ## Setup
 
-Create an environment and install dependencies from `requirements.txt`:
+Create an environment and install dependencies:
 
 ```bash
-pip install -r requirements.txt
+conda create -n snndet python=3.10.19
+conda activate snndet
+pip install torch==2.7.0 torchvision==0.22.0 torchaudio==2.7.0 --index-url https://download.pytorch.org/whl/cu128
+pip install opencv-python python-dateutil pyyaml requests psutil torchinfo spikingjelly timm einops pandas
 ```
 
 ## Model Weights
