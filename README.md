@@ -23,4 +23,7 @@ models/snndet_0.8B.pt
 
 ```bash
 python main.py --model models/snndet_0.8B.pt --target <picture>
+
+# example
+# python main.py --model models/snndet_0.8B.pt --target assets/demo.jpg
 ```
